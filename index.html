@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BOUAFIA MEHDI profile Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/ca14d63e5d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  
+   <div class="container">
+    <div class="card" data-tilt>
+      <h1>BOUAFIA MEHDI</h1>
+      <img src="images/Profil.jpg" alt="" id="profil-picture">
+      <p id="intro">
+        Consultant Marketing Digital & Data
+      </p>
+      <a href="mailto:mehdi.bouafia@kedgebs.com" class="btn-blue">Contact</a>
+      
+    </div>
+
+    <div class="card" id="second" data-tilt>
+        <h2>🏆 CERTIFICATION 🏆</h2>
+    <div class="certification" data-tilt>
+         <img src="images/Google-Ads.png" alt="" class="img-certif" >
+         <img src="images/Google-analytics.png" alt="" class="img-certif">
+         <img src="images/Hubspot.png" alt="" class="img-certif">
+         <img src="images/Facebook.png" alt="" class="img-certif">
+    </div>
+    </div>
+
+    <div class="card" id="second" data-tilt>
+        <h2>🎯 COMPETENCES 🎯</h2>
+      <p>
+        <br>- Animer les réseaux sociaux pour le compte de l’entreprise <br>
+        <br>- Augmenter la présence digitale et accroître la visibilité de la société <br>
+        <br>- Action de communication via les équipes de vente<br>
+        <br>- Marketing pour la force de vente <br>
+        <br>- Réaliser une veille concurrentielle (Commerciale, E-réputation)<br>
+        <br>- Participer au développement de la stratégie de communication<br>
+        <br>- Produire et planifier du contenu (Planning éditorial, photos, vidéos…)<br>
+        <br>- Participer aux événements (Mise en place, Communication)<br>
+      </p>
+    </div>
+
+    <div class="card" id="third" data-tilt>
+      <h2>👇 NOUS SUIVRE 👇 </h2>
+      <ul class="list-inline">
+        <li><a href="https://twitter.com/"> <i class="fa-brands fa-twitter fa-fade fa-2xs"></i> </a></li>
+        <li><a href="https://www.linkedin.com/in/mehdi-bouafia/"> <i class="fa-brands fa-linkedin-in fa-fade fa-2xs"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/mehdi-bouafia/"> <i class="fa-sharp fa-solid fa-globe fa-fade fa-2xs"></i> </a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Fenetre pop-up -->
+  <div id="popupWrapper" class="popup-wrapper">
+    <div class="popup-content">
+      <h2>Ça Merite Pas Un 20/20 !</h2>
+      <p>Merci pour le cours 👌 </p>
+      <button id="closeButton">Fermer</button>
+    </div>
+  </div>
+
+<!-- Script Fenetre Pop-up -->
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    document.getElementById('popupWrapper').style.display = 'block';
+  }, 2000);
+
+  document.getElementById('closeButton').addEventListener('click', function() {
+    document.getElementById('popupWrapper').style.display = 'none';
+  });
+});
+
+  </script>
+  
+  
+<!-- Script Tilt -->
+
+  <script src="vanilla-tilt.js"></script>
+
+</body>
+</html>
